@@ -23,7 +23,7 @@ public class Zadatak3 {
 
 
 		FacebookPost z = new FacebookPost();
-		z.imeIPrezime= "Željko Manojlović";
+		z.setImeIPrezime("Željko Manojlović");
 		z.korisnik= "Jelena Manojlović";
 		z.tekstObjave="Lajkuj moj profil";
 		z.brojLajkova= 3;

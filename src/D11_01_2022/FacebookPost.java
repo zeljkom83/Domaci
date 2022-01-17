@@ -2,7 +2,7 @@ package D11_01_2022;
 
 public class FacebookPost {
 
-	String imeIPrezime;
+	private String imeIPrezime;
 	String korisnik;
 	String tekstObjave;
 	int brojLajkova;
@@ -10,7 +10,7 @@ public class FacebookPost {
 
 	public void stampaj(){
 		
-		System.out.println(this.imeIPrezime + " >>> " + this.korisnik);
+		System.out.println(this.getImeIPrezime() + " >>> " + this.korisnik);
 		System.out.println(this.tekstObjave);
 		System.out.println(this.brojLajkova + "|" + this.brojDeljenja);
 		
@@ -29,5 +29,13 @@ public class FacebookPost {
 		}
 	 public void share() {
 		this.brojDeljenja=this.brojDeljenja+1;
+	}
+
+	public String getImeIPrezime() {
+		return imeIPrezime;
+	}
+
+	public void setImeIPrezime(String imeIPrezime) {
+		this.imeIPrezime = imeIPrezime;
 	}
 }

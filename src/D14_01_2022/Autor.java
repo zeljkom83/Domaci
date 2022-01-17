@@ -1,7 +1,7 @@
 package D14_01_2022;
 
 public class Autor {
-     private String imeIPrezime;
+	private String imeIPrezime;
 
 	public String getImeIPrezime() {
 		return imeIPrezime;
@@ -10,11 +10,12 @@ public class Autor {
 	public void setImeIPrezime(String imeIPrezime) {
 		this.imeIPrezime = imeIPrezime;
 	}
-     
-     public Autor (String imeIPrezime) {
-    	 this.imeIPrezime=imeIPrezime;
-     }
-     public void stampaj() {
-    	System.out.println("Autor je " + this.imeIPrezime); 
-     }
+
+	public Autor(String imeIPrezime) {
+		this.imeIPrezime = imeIPrezime;
+	}
+
+	public void stampaj() {
+		System.out.println("Autor je " + this.imeIPrezime);
+	}
 }
